@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2? family = Lato & display = swap');
 body {
     margin: 0;
-    padding: 0;
+    padding: 10px;
     font-family: 'Lato', sans-serif;
     background-color: #284B63;
     color: aliceblue;
@@ -60,3 +60,26 @@ body {
 .footer a{
     color: snow;
 }
+@media (max-width: 425px){
+    .options img {
+        max-width: 130px;
+    }
+}
+@media (max-width: 375px){
+    .options img {
+        max-width: 120px;
+    }
+    #resultado {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 320px){
+    .title h1{
+        font-size: 1.8em;
+    }
+    .options img {
+        max-width: 90px;
+    }
+}
+
