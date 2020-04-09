@@ -15,35 +15,26 @@ var result = document.getElementById("resultado");
 const Machine = Math.floor(Math.random() * (4 - 1) + 1);
 
 function piedra(){
-    if(Machine == 3){
-        result.innerHTML = "La computadora eligio Tijera, Ganaste !";
-    }
-    else if (Machine == 2) {
-        result.innerHTML = "La computadora eligio Papel, Perdiste !";
-    }
-    else {
-        result.innerHTML = "La computadora eligio Piedra, Empataron !";
+    switch(Machine){
+        case 1: result.innerHTML = "La computadora eligio Piedra, Empataron !"; break;
+        case 2: result.innerHTML = "La computadora eligio Papel, Perdiste !";   break;
+        case 3: result.innerHTML = "La computadora eligio Tijera, Ganaste !";   break;
+        default : result.innerHTML = "ERROR";
     }
 }
 function papel(){
-    if(Machine == 1){
-        result.innerHTML = "La computadora eligio Piedra, Ganaste !";
-    }
-    else if (Machine == 3) {
-        result.innerHTML = "La computadora eligio Tijera, Perdiste !";
-    }
-    else {
-        result.innerHTML = "La computadora eligio Papel, Empataron !";
+    switch(Machine){
+        case 1: result.innerHTML = "La computadora eligio Piedra, Ganaste !";  break;
+        case 2: result.innerHTML = "La computadora eligio Papel, Empataron !"; break;
+        case 3: result.innerHTML = "La computadora eligio Tijera, Perdiste !"; break;
+        default : result.innerHTML = "ERROR";
     }
 }
 function tijera(){
-    if(Machine == 2){
-        result.innerHTML = "La computadora eligio Papel, Ganaste !";
-    }
-    else if (Machine == 1) {
-        result.innerHTML = "La computadora eligio Piedra, Perdiste !";
-    }
-    else {
-        result.innerHTML = "La computadora eligio Tijera, Empataron !";
+    switch(Machine){
+        case 1: result.innerHTML = "La computadora eligio Piedra, Perdiste !";  break;
+        case 2: result.innerHTML = "La computadora eligio Papel, Ganaste !";    break;
+        case 3: result.innerHTML = "La computadora eligio Tijera, Empataron !"; break;
+        default : result.innerHTML = "ERROR";
     }
 }
